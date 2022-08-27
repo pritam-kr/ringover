@@ -1,0 +1,20 @@
+.filter-wrapper,
+.product-wrapper,
+.cart-wrapper {
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+}
+
+.cart-wrapper {
+  display: none;
+}
+
+.store-wrapper {
+  max-width: 1450px;
+  margin: 1rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 25% auto;
+}
+
+
