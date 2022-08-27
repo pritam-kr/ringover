@@ -9,6 +9,9 @@ export const data = {
       description:
         "With design elements inspired by the movement and motion of city life, the Wild Rider Layers Unisex Sneakers brings a fresh new dimension to the iconic Rider family. We've layered a rich mix of premium leather, suede and hairy suede onto a nylon upper to create texture and a raw edgy look that is pure street. The IMEVA midsole and rubber outsole ensure combined lightweight comfort and great traction to take you forward, further and faster through your day and beyond.",
       quantity: 1,
+      color: "white",
+      type: "sneakers",
+      rating: 1,
     },
     {
       id: 2,
@@ -19,6 +22,9 @@ export const data = {
       description:
         "Premium material and tech features are given a branded boost from German engineering. The Mercedes Kart Cat-X Tech Unisex Sneakers areleant style and esteem by Mercedes-AMG Petronas Motorsport. The piece rises to the occasion with an all-leather upper.",
       quantity: 1,
+      color: "black",
+      type: "sneakers",
+      rating: 1,
     },
     {
       id: 3,
@@ -29,6 +35,9 @@ export const data = {
       description:
         "The Jako Slip-On Men's Shoes are perfect for a laceless running style. Lightweight and styled for everyday wear, they feature a breathable and durable mesh upper. Layered cushioning adds comfort that goes the distance.",
       quantity: 1,
+      color: "black",
+      type: "shoes",
+      rating: 1,
     },
     {
       id: 4,
@@ -39,6 +48,9 @@ export const data = {
       description:
         "Catering to the growing consumer expectation for casual, everyday comfort, the Serve Pro Lite Trainers feature shock-absorbing support for lightweight luxury.",
       quantity: 1,
+      color: "white",
+      type: "shoes",
+      rating: 1,
     },
     {
       id: 5,
@@ -49,6 +61,9 @@ export const data = {
       description:
         "There's more to the Electron E Trainers than meets the eye. Its visible technology highlights fantastic features like a breathable mesh upper, synthetic quarter panels for support and a bold aesthetic that's both fun and futuristic. The elastic band on the heel provides extra comfort.",
       quantity: 1,
+      color: "red",
+      type: "shoes",
+      rating: 2,
     },
     {
       id: 6,
@@ -59,6 +74,9 @@ export const data = {
       description:
         "This one is for the collectors,connoisseur & extreme uber cool, the one8 Virat Kohli Basket Classic one8 V3 pays homage to the illustrious career of the legend himslef",
       quantity: 1,
+      color: "white",
+      type: "sneakers",
+      rating: 2,
     },
     {
       id: 7,
@@ -69,6 +87,9 @@ export const data = {
       description:
         "Long, clean lines, a premium leather upper and a tennis-inspired silhouette make the Caracal Sneakers your go-to for sleek style, whether you're on or off the court.",
       quantity: 1,
+      color: "white",
+      type: "sneakers",
+      rating: 2,
     },
     {
       id: 8,
@@ -79,6 +100,9 @@ export const data = {
       description:
         "The Mirage Mox takes design cues from a 1970s pair of PUMA running shoes and transforms them with textural contrasts, pops of colour and funky futuristic elements. Inspired by illusions and the space between what's real and otherworldly, it's ready for new realities. Incorporating caution tape elements for a deconstructed approach to this season's trends, the Brightly Packed iteration features premium materials for a sophisticated silhouette that will have you rocking retro with cool confidence",
       quantity: 1,
+      color: "other",
+      type: "shoes",
+      rating: 2,
     },
     {
       id: 9,
@@ -89,6 +113,9 @@ export const data = {
       description:
         "Keep the game going in the shoe that launched a movement, our Future Rider Play On Unisex Sneakers. This shoe is dedicated to pared-down performance, featuring a super-light nylon, suede and leather upper and our famous shock-absorbing Federbein outsole to keep you pounding the pavement in style.",
       quantity: 1,
+      color: "other",
+      type: "sneakers",
+      rating: 3,
     },
     {
       id: 10,
@@ -99,6 +126,9 @@ export const data = {
       description:
         "The freshest look for any occasion, the Anzarun Lite Trainers are PUMA's most refined shoe yet. Featuring the breezy Anzarun DNA mesh upper, a cushy SoftFoam+ sockliner and discreet PUMA branding throughout, you're sure to look great, wherever the day takes you.",
       quantity: 1,
+      color: "other",
+      type: "sneakers",
+      rating: 3,
     },
     {
       id: 11,
@@ -109,6 +139,9 @@ export const data = {
       description:
         "With a foot-hugging mesh upper and a supportive lace-through midfoot caging system, the Pacer Next Cage has a sleek silhouette that is as ready for the gym as it is for the streets. A feather-light midsole provides superior energy return, cushioning and support, while slip-on construction adds a sock-like rather than a shoe-like feel. You wont want to leave home in anything else.",
       quantity: 1,
+      color: "black",
+      type: "shoes",
+      rating: 3,
     },
     {
       id: 12,
@@ -119,6 +152,9 @@ export const data = {
       description:
         "Rethink the basketball trainer with the Rebound Lay-Up. This versatile sneaker features a mesh upper for superior breathability and a SoftFoam+ sockliner to give you a supportive fit. Paired with the iconic PUMA Formstrip, you will  have classic style with all of the innovation of today.",
       quantity: 1,
+      color: "white",
+      type: "shoes",
+      rating: 3,
     },
     {
       id: 13,
@@ -129,6 +165,9 @@ export const data = {
       description:
         "This one is for the collectors,connoisseur & extreme uber cool, the one8 Virat Kohli Basket Classic one8 V3 pays homage to the illustrious career of the legend himslef",
       quantity: 1,
+      color: "black",
+      type: "sneakers",
+      rating: 4,
     },
     {
       id: 14,
@@ -139,6 +178,9 @@ export const data = {
       description:
         "Crafted for the ones who love an active life while looking stylish, PUMA and KL Rahul bring you the Columbus Men's Shoes. Enveloping KL Rahul's bold and sophisticated style, the contrasting overlays add edge to the overall look of PUMA x 1DER Columbus Men's Shoes. Even though the PUMA and 1DER logos are subtle, they are unmissable.",
       quantity: 1,
+      color: "red",
+      type: "shoes",
+      rating: 4,
     },
     {
       id: 15,
@@ -149,6 +191,9 @@ export const data = {
       description:
         "Live life grand with the BMW M Motorsport City Rider Unisex Sneakers. Featuring the signature Rider outsole in combination with the BMW branding. The stunning design adds the edge that'll make any casual look appear out of the world",
       quantity: 1,
+      color: "black",
+      type: "sneakers",
+      rating: 4,
     },
     {
       id: 16,
@@ -159,6 +204,9 @@ export const data = {
       description:
         "Inspired by Spacewalk, the Jamming FUSEFIT Evolution Sneakers take the next step in futuristic design and technology. The combined outsole features a TPU membrane that encapsulates free-floating EVA beads for superior cushioning and the feeling of walking on sand. A unique lacing system gives you endless possibilities for comfort and style. With versatile and adaptive features, these sneakers are the perfect way to overcome any obstacle and propel yourself into new worlds.",
       quantity: 1,
+      color: "black",
+      type: "shoes",
+      rating: 4,
     },
     {
       id: 17,
@@ -169,6 +217,9 @@ export const data = {
       description:
         "Be street ready with the Puma Perforated Low Men's Shoes perfect for leisure and slaying around.",
       quantity: 1,
+      color: "white",
+      type: "shoes",
+      rating: 5,
     },
     {
       id: 18,
@@ -179,6 +230,9 @@ export const data = {
       description:
         "Based on PUMAs innovative Running System technology, the RS-X line draws its design inspiration from the decade that had the best toys ever, hands down, bar none: the 1980s. Specifically, these RS-X TOYS Unisex Sneakers play on the trend of the toys of our childhood ultimately becoming collectors items down the road. The mesh upper on these Sneakers promote air flow, and features colours that would be at home in a crowded video arcade from 30 years ago. A unique cushioning function provides support, and the rubber outsole offers supreme traction and grip.",
       quantity: 1,
+      color: "other",
+      type: "sneakers",
+      rating: 5,
     },
     {
       id: 19,
@@ -189,6 +243,9 @@ export const data = {
       description:
         "Take to the urban outdoors in the X-Ray² Ramble Trainers. PUMAs signature street style just got rugged, with technical fabrics like ripstop and suede, robust eyestay webbing straps and discreet branding. So, of course, the shoe looks fierce - but with the full-on comfort of Softfoam+, this hiking hybrid feels amazing too.",
       quantity: 1,
+      color: "other",
+      type: "shoes",
+      rating: 5,
     },
     {
       id: 20,
@@ -199,6 +256,9 @@ export const data = {
       description:
         "Dare to be bold. We've rebooted the RS design to take it to a whole new level. We've stripped it back to down basics and rebuilding it with more extreme mixes of colour and materials for a 3x stronger retro-meets-the-future look. PUMA's Running System is the engine under the bonnet, providing comfort and cushioning with every step.",
       quantity: 1,
+      color: "other",
+      type: "shoes",
+      rating: 5,
     },
     {
       id: 21,
@@ -209,6 +269,9 @@ export const data = {
       description:
         "Dare to be bold. We've rebooted the RS design to take it to a whole new level. We've stripped it back to down basics and rebuilding it with more extreme mixes of colour and materials for a 3x stronger retro-meets-the-future look. PUMA's Running System is the engine under the bonnet, providing comfort and cushioning with every step.",
       quantity: 1,
+      color: "orange",
+      type: "shoes",
+      rating: 5,
     },
     {
       id: 22,
@@ -219,6 +282,9 @@ export const data = {
       description:
         "The daily commute. The walk to the coffee shop. The off hours when you're free to roam. When life takes you out into the city, these adidas shoes help you cruise. Built on the innovative ZX line and infused with the technical vibe of trail shoes, they have a responsive Boost midsole, a grippy outsole and a warm lining. We're talking all-day comfort here.",
       quantity: 1,
+      color: "other",
+      type: "shoes",
+      rating: 5,
     },
     {
       id: 24,
@@ -229,6 +295,9 @@ export const data = {
       description:
         "Dare to be bold. We've rebooted the RS design to take it to a whole new level. We've stripped it back to down basics and rebuilding it with more extreme mixes of colour and materials for a 3x stronger retro-meets-the-future look.",
       quantity: 1,
+      color: "other",
+      type: "sneakers",
+      rating: 5,
     },
     {
       id: 25,
@@ -239,7 +308,9 @@ export const data = {
       description:
         "Who says you can't have it all? Lace up these adidas Defiant Generation tennis shoes to raise your game. The foot-hugging upper and cushioned midsole combine to keep you comfortable as you express yourself on the court. The durable outsole and abrasion-resistant toe easily stand up to your all-action game.",
       quantity: 1,
+      color: "orange",
+      type: "shoes",
+      rating: 5,
     },
   ],
 };
- 
