@@ -316,6 +316,7 @@ export const data = {
   teamMembers: [
     {
       login: "mojombo",
+      bio: "Front-end Developer",
       id: 1,
       node_id: "MDQ6VXNlcjE=",
       avatar_url: "https://avatars.githubusercontent.com/u/1?v=4",
@@ -340,6 +341,7 @@ export const data = {
     {
       login: "defunkt",
       id: 2,
+      bio: "Back-end Developer",
       node_id: "MDQ6VXNlcjI=",
       avatar_url: "https://avatars.githubusercontent.com/u/2?v=4",
       gravatar_id: "",
@@ -363,6 +365,7 @@ export const data = {
     {
       login: "pjhyett",
       id: 3,
+      bio: "Bank Manager",
       node_id: "MDQ6VXNlcjM=",
       avatar_url: "https://avatars.githubusercontent.com/u/3?v=4",
       gravatar_id: "",
@@ -386,6 +389,7 @@ export const data = {
     {
       login: "wycats",
       id: 4,
+      bio: "Product designer",
       node_id: "MDQ6VXNlcjQ=",
       avatar_url: "https://avatars.githubusercontent.com/u/4?v=4",
       gravatar_id: "",
@@ -408,6 +412,7 @@ export const data = {
     {
       login: "ezmobius",
       id: 5,
+      bio: "Product developer",
       node_id: "MDQ6VXNlcjU=",
       avatar_url: "https://avatars.githubusercontent.com/u/5?v=4",
       gravatar_id: "",
@@ -429,5 +434,26 @@ export const data = {
       site_admin: false,
     },
   ],
-  contact: []
+  contact: [
+    {
+      id: 1,
+      email: "jobs",
+      work: "to work with us",
+    },
+    {
+      id: 2,
+      email: "info",
+      work: "for more information",
+    },
+    {
+      id: 3,
+      email: "feedbacks",
+      work: "to send feedback",
+    },
+    {
+      id: 4,
+      email: "support",
+      work: "for any technical support",
+    },
+  ],
 };
