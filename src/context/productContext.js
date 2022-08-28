@@ -1,11 +1,14 @@
 import { createContext, useContext, useEffect, useReducer } from "react";
 import { data } from "../backend/data";
+import { filteredPriceRangeShoes } from "../utils/filters";
 import {
   findUniqueType,
   findUniqueColor,
   findUniqueRating,
 } from "../utils/findUniqueValue";
+
 import { productReducer } from "./reducers";
+
 
 const ProductContext = createContext(null);
 
@@ -16,6 +19,7 @@ const initialState = {
     uniqueColors: [],
     uniqueTypes: [],
     priceRange: null,
+    price: null,
     type: null,
     rating: null,
   },
@@ -24,19 +28,15 @@ const initialState = {
 export const ProductContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(productReducer, initialState);
   const shoes = state.allShoses;
+ 
+  const {filters : {priceRange}} = state;
 
   // Filter range
   // 400 to 700
   // 700 +
 
-  const filteredPriceRangeShoes = (array, startPoint, endPoint) => {
-    return array.filter(
-      (eachShoes) =>
-        eachShoes.price >= startPoint && eachShoes.price <= endPoint
-    );
-  };
-
-  console.log(filteredPriceRangeShoes(shoes, 121, 400));
+  const getFilteredPriceRangeShoes = filteredPriceRangeShoes(shoes, priceRange === 700 ? priceRange : priceRange)
+  console.log(getFilteredPriceRangeShoes);
 
   // Get unique colors
   const getUniqueColor = findUniqueColor(shoes);

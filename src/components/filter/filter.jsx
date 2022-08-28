@@ -1,17 +1,19 @@
 import * as FaIcons from "react-icons/fa";
 import { useProductContext } from "../../context/productContext";
 import "./filter.css";
+
 export const Filter = () => {
-  const { state, getUniqueColor, getUniqueType, getUniqueRating } = useProductContext();
+  const { state, dispatch, getUniqueColor, getUniqueType, getUniqueRating } =
+    useProductContext();
 
   const colorFilterHandler = (color) => {
     console.log(color);
   };
 
-
-  const priceFilter = (price) => {
-
-  }
+  const priceRangeHandler = (price) => {
+    if (price === 700) dispatch({ type: "APPLY_PRICE_RANGE_FILTER", payload: price });
+    dispatch({ type: "APPLY_PRICE_RANGE_FILTER", payload: price });
+  };
 
   return (
     <>
@@ -25,11 +27,32 @@ export const Filter = () => {
         <div className="filter-box">
           <h2 className="headings subheading filter-title ">Cost</h2>
           <div style={{ margin: "1rem 0" }}>
-             <div>
-                <label className="lists filter-label"><input type="radio" name="price"/> 121 to 400 INR</label>
-                <label className="lists filter-label"><input type="radio" name="price"/> 400 to 700 INR</label>
-                <label className="lists filter-label"><input type="radio" name="price"/> 700 + INR</label>
-             </div>
+            <div>
+              <label className="lists filter-label">
+                <input
+                  type="radio"
+                  name="price"
+                  onClick={() => priceRangeHandler({ start: 121, end: 400 })}
+                />{" "}
+                121 to 400 INR
+              </label>
+              <label className="lists filter-label">
+                <input
+                  type="radio"
+                  name="price"
+                  onClick={() => priceRangeHandler({ start: 400, end: 700 })}
+                />{" "}
+                400 to 700 INR
+              </label>
+              <label className="lists filter-label">
+                <input
+                  type="radio"
+                  name="price"
+                  onClick={() => priceRangeHandler(700)}
+                />{" "}
+                700 + INR
+              </label>
+            </div>
           </div>
         </div>
 
@@ -63,23 +86,31 @@ export const Filter = () => {
           <h2 className="headings subheading filter-title ">Type</h2>
 
           <div style={{ margin: "1rem 0" }}>
-
-            {
-                getUniqueType?.map((eachType, i) => <label className="lists filter-label" key={i}>
-                <input type="checkbox" className="input-checkbox"/> <span>{eachType}</span>
-                </label>)
-            }
+            {getUniqueType?.map((eachType, i) => (
+              <label className="lists filter-label" key={i}>
+                <input type="checkbox" className="input-checkbox" />{" "}
+                <span>{eachType}</span>
+              </label>
+            ))}
           </div>
-
         </div>
         <div className="filter-box">
           <h2 className="headings subheading filter-title ">Rating</h2>
           <div style={{ margin: "1rem 0" }}>
-            {
-                getUniqueRating.map((eachRate, i) => <label className="lists filter-label" key={i}>
-                <input type="radio" className="input-rating" name="rating" value={eachRate}/> <span>{eachRate}</span> <span><FaIcons.FaStar className="star-icon"/></span>
-                </label>)
-            }
+            {getUniqueRating.map((eachRate, i) => (
+              <label className="lists filter-label" key={i}>
+                <input
+                  type="radio"
+                  className="input-rating"
+                  name="rating"
+                  value={eachRate}
+                />{" "}
+                <span>{eachRate}</span>{" "}
+                <span>
+                  <FaIcons.FaStar className="star-icon" />
+                </span>
+              </label>
+            ))}
           </div>
         </div>
       </div>
