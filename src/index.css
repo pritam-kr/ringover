@@ -72,3 +72,8 @@
   max-width: 1350px;
   margin: 0 auto;
 }
+
+
+::placeholder{
+  font-family: var(--primary-font);
+}

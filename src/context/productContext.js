@@ -1,6 +1,11 @@
 import { createContext, useContext, useEffect, useReducer } from "react";
 import { data } from "../backend/data";
-import { filteredPriceRangeShoes } from "../utils/filters";
+import {
+  filterByColor,
+  filterByRating,
+  filterByType,
+  filteredPriceRangeShoes,
+} from "../utils/filters";
 import {
   findUniqueType,
   findUniqueColor,
@@ -9,7 +14,6 @@ import {
 
 import { productReducer } from "./reducers";
 
-
 const ProductContext = createContext(null);
 
 const initialState = {
@@ -17,26 +21,41 @@ const initialState = {
   cart: [],
   filters: {
     uniqueColors: [],
-    uniqueTypes: [],
+    types: null,
     priceRange: null,
-    price: null,
-    type: null,
     rating: null,
+    search: "",
   },
 };
 
 export const ProductContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(productReducer, initialState);
   const shoes = state.allShoses;
- 
-  const {filters : {priceRange}} = state;
+  const {
+    cart,
+    filters: { priceRange, uniqueColors, types, rating },
+  } = state;
 
+  console.log(cart);
   // Filter range
   // 400 to 700
   // 700 +
 
-  const getFilteredPriceRangeShoes = filteredPriceRangeShoes(shoes, priceRange === 700 ? priceRange : priceRange)
-  console.log(getFilteredPriceRangeShoes);
+  const getFilteredPriceRangeShoes = filteredPriceRangeShoes(
+    shoes,
+    priceRange === 700 ? priceRange : priceRange
+  );
+
+  const getFilterByColor = filterByColor(
+    getFilteredPriceRangeShoes,
+    uniqueColors
+  );
+
+  const getFilterByType = filterByType(getFilterByColor, types);
+
+  const getFilterByRating = filterByRating(getFilterByType, rating);
+
+  const filterdProducts = getFilterByRating;
 
   // Get unique colors
   const getUniqueColor = findUniqueColor(shoes);
@@ -59,6 +78,7 @@ export const ProductContextProvider = ({ children }) => {
         getUniqueColor,
         getUniqueType,
         getUniqueRating,
+        filterdProducts,
       }}
     >
       {" "}

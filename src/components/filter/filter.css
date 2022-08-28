@@ -41,3 +41,8 @@
     font-size: .5rem;
     color: goldenrod;
 }
+
+.btn-clear{
+  font-weight: 600;
+  cursor: pointer;
+}
