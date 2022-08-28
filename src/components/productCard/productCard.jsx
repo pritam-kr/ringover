@@ -1,6 +1,7 @@
 import "./productCard.css";
 import * as FaIcons from "react-icons/fa";
 import { useProductContext } from "../../context/productContext";
+import { useNavigate } from "react-router-dom";
 
 export const ProductCard = ({ eachProduct }) => {
   const { dispatch } = useProductContext();
@@ -9,12 +10,19 @@ export const ProductCard = ({ eachProduct }) => {
     dispatch({ type: "ADD_TO_CART", payload: eachProduct });
   };
 
+  const navigate = useNavigate();
+
+  const singleProductHandler = (id) => {
+    navigate(`/product/${id}`);
+  };
+
   return (
     <div className="product-card" key={eachProduct.id}>
       <img
         src={eachProduct.image}
         className="product-image"
         alt="product_image"
+        onClick={() => singleProductHandler(eachProduct.id)}
       />
       <div className="product-info">
         <h6 className="headings product-title">{eachProduct.name}</h6>

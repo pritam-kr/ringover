@@ -32,11 +32,10 @@ export const ProductContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(productReducer, initialState);
   const shoes = state.allShoses;
   const {
-    cart,
     filters: { priceRange, uniqueColors, types, rating },
   } = state;
 
-  console.log(cart);
+ 
   // Filter range
   // 400 to 700
   // 700 +
