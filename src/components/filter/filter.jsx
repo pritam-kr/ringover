@@ -11,12 +11,11 @@ export const Filter = () => {
     getUniqueColor,
     getUniqueType,
     getUniqueRating,
+    applyFilter,
   } = useProductContext();
-
 
   const colorFilterHandler = (color) => {
     dispatch({ type: "APPLY_COLOR_FILTER", payload: color });
-     
   };
 
   const priceRangeHandler = (price) => {
@@ -36,6 +35,11 @@ export const Filter = () => {
   const clearHandler = () => {
     dispatch({ type: "CLEAR_FILTERS" });
   };
+
+
+  const filterApplyHandler = () => {
+
+  }
 
   return (
     <>
@@ -153,6 +157,12 @@ export const Filter = () => {
           </div>
         </div>
       </div>
+
+      <footer className="filter-footer">
+        <div className="btn-container">
+          <button className="btn btn-order-now" onClick={() => filterApplyHandler()}>Apply</button>
+        </div>
+      </footer>
     </>
   );
 };
