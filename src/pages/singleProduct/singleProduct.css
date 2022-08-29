@@ -87,3 +87,9 @@
 .small-text{
     font-size: smaller;
 }
+
+.product-rating{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
