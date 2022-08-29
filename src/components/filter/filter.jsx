@@ -11,7 +11,7 @@ export const Filter = () => {
     getUniqueColor,
     getUniqueType,
     getUniqueRating,
-    applyFilter,
+    
   } = useProductContext();
 
   const colorFilterHandler = (color) => {
