@@ -17,6 +17,7 @@
     text-transform: uppercase;
     font-size: medium;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .product-info{
