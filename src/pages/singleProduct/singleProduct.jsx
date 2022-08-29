@@ -48,6 +48,7 @@ export const SingleProduct = () => {
 
             <div className="single-product-info">
               <h6 className="headings product-title">{name}</h6>
+              
               <h6 className="headings product-title product-price">
                 {" "}
                 Rs. {price}/-
@@ -56,6 +57,7 @@ export const SingleProduct = () => {
               <p className="product-rating">
                 {rating}/5 <FaIcons.FaStar className="start-icon" />
               </p>
+              <p className="text small-text">80 Reviews</p>
             </div>
           </div>
 

@@ -83,3 +83,7 @@
     color: gold;
     margin-left: .5rem;
 }
+
+.small-text{
+    font-size: smaller;
+}
