@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { Cart } from "../../components";
 import { useProductContext } from "../../context/productContext";
 import "./singleProduct.css";
@@ -6,6 +6,7 @@ import * as FaIcons from "react-icons/fa";
 
 export const SingleProduct = () => {
   const { id } = useParams();
+  const navigate = useNavigate()
 
   const {
     state: { allShoses },
@@ -13,10 +14,18 @@ export const SingleProduct = () => {
   const { image, name, price, rating, description } =
   allShoses?.find((eachProduct) => eachProduct?.id === Number(id)) || {}
 
+
+  const backToStore = () => {
+    navigate('/store')
+  }
+
   return (
     <div className="container single-product-container">
       <div className="wrapper single-product-wrapper">
         <div className="single-product">
+
+          <p className="btn-back" onClick={() => backToStore()}><FaIcons.FaArrowLeft /></p>
+
           <div className="single-product-image">
             <img src={image} alt="single_product" />
           </div>

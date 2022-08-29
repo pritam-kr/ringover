@@ -6,12 +6,18 @@
       
 }
 
-
+.btn-back{
+    position: absolute;
+    font-size: 2rem;
+    margin: 1rem;
+    cursor: pointer;
+}
 .single-product{
     display: flex;
     gap: 2rem;
     border: 1px solid var(--border-color);
     padding: 1rem;
+    position: relative;
 }
 .single-product-image{
     width: 400px;

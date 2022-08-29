@@ -56,9 +56,7 @@ export const ProductContextProvider = ({ children }) => {
 
   const filterdProducts = getFilterByRating;
 
-  const applyFIlter = () => {
-
-  }
+   
 
   // Get unique colors
   const getUniqueColor = findUniqueColor(shoes);
@@ -82,7 +80,7 @@ export const ProductContextProvider = ({ children }) => {
         getUniqueType,
         getUniqueRating,
         filterdProducts,
-        applyFIlter
+        
       }}
     >
       {" "}

@@ -36,9 +36,9 @@
 
 .btn-sortBy {
   background-color: transparent;
-  border: 1px solid var(--border-color);
-
   padding: 0.5rem 1rem;
+  font-size: medium;
+  border: none;
 }
 
 .input-search-field {
@@ -48,3 +48,6 @@
   min-width: 20rem;
 }
 
+.search-icon{
+  margin-right: 1rem;
+}

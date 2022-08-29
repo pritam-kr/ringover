@@ -5,7 +5,7 @@ import "./filter.css";
 export const Filter = () => {
   const {
     state: {
-      filters: { uniqueColors, rating, types, priceRange },
+      filters: { rating, types, priceRange },
     },
     dispatch,
     getUniqueColor,
@@ -37,10 +37,7 @@ export const Filter = () => {
   };
 
 
-  const filterApplyHandler = () => {
-
-  }
-
+   
   return (
     <>
       <header className="filter-header">
@@ -157,12 +154,7 @@ export const Filter = () => {
           </div>
         </div>
       </div>
-
-      <footer className="filter-footer">
-        <div className="btn-container">
-          <button className="btn btn-order-now" onClick={() => filterApplyHandler()}>Apply</button>
-        </div>
-      </footer>
+ 
     </>
   );
 };
