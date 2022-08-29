@@ -25,7 +25,7 @@ export const ProductCard = ({ eachProduct }) => {
         onClick={() => singleProductHandler(eachProduct.id)}
       />
       <div className="product-info">
-        <h6 className="headings product-title">{eachProduct.name}</h6>
+        <h6 className="headings product-title" onClick={() => singleProductHandler(eachProduct.id)}>{eachProduct.name}</h6>
         <h6 className="headings product-title product-price">
           {" "}
           Rs. {eachProduct.price}/-
